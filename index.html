@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset=”UTF-8”>
+    <meta charset="UTF-8">
     <script>
-        Function redirectToRandomVideo() {
-            Const videoLinks = [
-                https://www.globo.com/,
-https://www.uol.com.br/,
-https://www.terra.com.br/
+        function redirectToRandomVideo() {
+            const videoLinks = [
+                "https://www.globo.com",
+                "https://www.uol.com.br",
+                "https://www.terra.com.br"
             ];
-            Const randomIndex = Math.floor(Math.random() * videoLinks.length);
-            Window.location.href = videoLinks[randomIndex];
+            const randomIndex = Math.floor(Math.random() * videoLinks.length);
+            window.location.href = videoLinks[randomIndex];
         }
     </script>
 </head>
-<body onload=”redirectToRandomVideo()”>
-    <p>Redirecting to a random video…</p>
+<body onload="redirectToRandomVideo()">
+    <p>Redirecionando para mais um causo…</p>
 </body>
 </html>
