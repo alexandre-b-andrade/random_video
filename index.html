@@ -5,10 +5,67 @@
     <script>
         function redirectToRandomVideo() {
             const videoLinks = [
-                "https://www.globo.com",
-                "https://www.uol.com.br",
-                "https://www.terra.com.br",
-                "https://www.youtube.com"
+				"https://www.youtube.com/watch?v=yVq5ATHir_s", <!-- Almerinda relembra viagem para Bom Jesus -->
+				"https://www.youtube.com/watch?v=8MiRHyTDiL0", <!-- Almerinda recebe visitas em Porto Velho -->
+				"https://www.youtube.com/watch?v=E3s5IgLlTYU", <!-- Almerinda e Valmir em viagem para Minaçu -->
+				"https://www.youtube.com/watch?v=0y9z8AWtX1w", <!-- Valmir relembra como família foi para Goiás -->
+				"https://www.youtube.com/watch?v=rdlZEjGJCco", <!-- Rosilda relembra infância em Goiás -->
+				"https://www.youtube.com/watch?v=_FInAF2ytNc", <!-- Rosilda conta a ida para Goiás -->
+				"https://www.youtube.com/watch?v=Pwhyo73t3Ic", <!-- Railda no Tênis Clube de Porto Velho -->
+				"https://www.youtube.com/watch?v=dHvmxTzEM-4", <!-- Railda e o garimpo -->
+				"https://www.youtube.com/watch?v=kMn97aYny3o", <!-- Railda e a depilação -->
+				"https://www.youtube.com/watch?v=MsQWdbSwyBE", <!-- Rafaela e o viajante bom de horário -->
+				"https://www.youtube.com/watch?v=ZGnYMkDFx7w", <!-- Valmir relembra viagem para a Bahia em 1985 -->
+				"https://www.youtube.com/watch?v=pIjn-F-Xekg", <!-- Rafaela conta causos da Adriana -->
+				"https://www.youtube.com/watch?v=02Xt5IKPlCQ", <!-- Rafaela apresenta dossiê criminal -->
+				"https://www.youtube.com/watch?v=LcF4SurBfUM", <!-- Eliana viajando pra Bahia -->
+				"https://www.youtube.com/watch?v=nKzp2y6VRkc", <!-- Eliana conta memórias dos cunhados -->
+				"https://www.youtube.com/watch?v=Izk20n0uUUM", <!-- Anésio relembra o primeiro encontro de 98 -->
+				"https://www.youtube.com/watch?v=iwWsI4nKwWY", <!-- Adriana e as aventuras em São Félix -->
+				"https://www.youtube.com/watch?v=MbukEUdbFEM", <!-- Valmir e o kichute mais famoso da família -->
+				"https://www.youtube.com/watch?v=43-ZO8HoQls", <!-- Rosilda e Almerinda saem pela janela -->
+				"https://www.youtube.com/watch?v=_FTfT8Vx9GE", <!-- Valter nas retas de Uberlândia -->
+				"https://www.youtube.com/watch?v=UgurK-DcVKE", <!-- Valter e as minhocas -->
+				"https://www.youtube.com/watch?v=fHbsw6O4QSY", <!-- Valter dá sorte e não acha cachoeira -->
+				"https://www.youtube.com/watch?v=XhGhPo6PiW0", <!-- Valter conhece a internet de Crixás -->
+				"https://www.youtube.com/watch?v=uBEgOyzahhw", <!-- Pedro na peneira -->
+				"https://www.youtube.com/watch?v=lD3iWpNLBfM", <!-- Moreno e o cliente inesperado -->
+				"https://www.youtube.com/watch?v=lRfzDOATJ6M", <!-- Moreno e o caldo -->
+				"https://www.youtube.com/watch?v=ePtv0CXLqiY", <!-- Moreno e a quadrilha -->
+				"https://www.youtube.com/watch?v=DzEHokTEACk", <!-- Miguel e o envelope -->
+				"https://www.youtube.com/watch?v=jXVrHjxC4MI", <!-- Miguel e o bombadinho negociam jogador -->
+				"https://www.youtube.com/watch?v=AF2EIn3McUI", <!-- Marquim conta a técnica anti afogamento do Braquim -->
+				"https://www.youtube.com/watch?v=QebvjeWJzIU", <!-- Guizo em Parecia o Rei do Gado -->
+				"https://www.youtube.com/watch?v=voLSzyplcm8", <!-- Guizo dá dica para fazer uma festa boa -->
+				"https://www.youtube.com/watch?v=nKWqYgq16kc", <!-- Gabriela e a ressaca amenizada -->
+				"https://www.youtube.com/watch?v=QuKzeGnrDVE", <!-- Fernanda e as histórias que ninguém lembra -->
+				"https://www.youtube.com/watch?v=umxQQ9xaDzI", <!-- Xaroca conta história do Vô Chico -->
+				"https://www.youtube.com/watch?v=jVb5VJuiYnI", <!-- Elma relembrando viagem pra Capitólio -->
+				"https://www.youtube.com/watch?v=R67I_pKvuiw", <!-- Elma manda mensagem para Valter e Eliana -->
+				"https://www.youtube.com/watch?v=7nOShulye9k", <!-- Eliana e a previsão do tempo -->
+				"https://www.youtube.com/watch?v=EqBgSYabrJY", <!-- Eduarda e o sósia do Thor -->
+				"https://www.youtube.com/watch?v=AD14N13iUSc", <!-- Eduarda e o coelho da Páscoa -->
+				"https://www.youtube.com/watch?v=ww-fgv2Zn9w", <!-- Eduarda e Braquim -->
+				"https://www.youtube.com/watch?v=GQbBtiH8XvM", <!-- Diego e o incidente do olho -->
+				"https://www.youtube.com/watch?v=lQ1ULQIAnCs", <!-- Daniela e o melhor negócio que ela já fez na vida -->
+				"https://www.youtube.com/watch?v=B5U5HOG9moA", <!-- Cristine e o fogo -->
+				"https://www.youtube.com/watch?v=hdkgH-hEu8M", <!-- Cristine e a visita que queria levar a xícara -->
+				"https://www.youtube.com/watch?v=QngFnMzLjl8", <!-- Carol leva Moreno para casa da mamãe -->
+				"https://www.youtube.com/watch?v=zAaYB3GYvjE", <!-- Carol e as técnicas de vomitação -->
+				"https://www.youtube.com/watch?v=BZvxw9ugdw4", <!-- Carol e a padaria -->
+				"https://www.youtube.com/watch?v=LNkhbyY7kIU", <!-- Branquim e o soldado do exército brasileiro -->
+				"https://www.youtube.com/watch?v=QTPcVGT1TdM", <!-- Branquim e Marquim fazem prós e contras -->
+				"https://www.youtube.com/watch?v=6wrBScXdScI", <!-- Branquim e as dicas de turismo da Adriana -->
+				"https://www.youtube.com/watch?v=v6zQmpqNb8w", <!-- Branquim e a furada na Pedra Furada -->
+				"https://www.youtube.com/watch?v=L_NSt8XmcUU", <!-- Branquim e a carne temperada -->
+				"https://www.youtube.com/watch?v=qC3Y2l-gcFw", <!-- Ana e Daniel apresentam jornal -->
+				"https://www.youtube.com/watch?v=1YqHV99D960", <!-- Alexandre relembra carreira futebolística -->
+				"https://www.youtube.com/watch?v=pLdoad9piRE", <!-- Alexandre e o gene ruim de direção -->
+				"https://www.youtube.com/watch?v=l7exa7wsLtw", <!-- Alexandre e o carro novo -->
+				"https://www.youtube.com/watch?v=yIOaK_UTRME", <!-- Alexandre e as histórias do Encontro de 98 -->
+				"https://www.youtube.com/watch?v=7WLbgwQOKz0", <!-- Alexandre e as férias no exterior -->
+				"https://www.youtube.com/watch?v=Id2WLuAGm5E", <!-- Adriana e o chiqueiro -->
+				"https://1drv.ms/v/c/5dcac1c92e6f4d3c/EYOkE3ug1GxErfcaqUF_tHMBFMjTbq0AjBWvbdOpIHd_qQ?e=0tl9RU" <!-- Valter e a música da rádio -->
             ];
             const randomIndex = Math.floor(Math.random() * videoLinks.length);
             window.location.href = videoLinks[randomIndex];
